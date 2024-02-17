@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengaturan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            margin-top: 20px;
+            width: 300px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+        input[type="range"] {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pengaturan</h1>
+    <form id="settingsForm" action="#" method="post">
+        <label for="volume">Volume Suara:</label>
+        <input type="range" id="volume" name="volume" min="0" max="100" step="1">
+
+        <label for="language">Bahasa:</label>
+        <select id="language" name="language">
+            <option value="english">English</option>
+            <option value="spanish">Spanish</option>
+            <option value="french">French</option>
+            <option value="german">German</option>
+        </select>
+
+        <label for="theme">Tema:</label>
+        <select id="theme" name="theme">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+
+        <input type="submit" value="Simpan Pengaturan">
+    </form>
+
+    <script>
+        // Menangkap form
+        var form = document.getElementById('settingsForm');
+
+        // Menambahkan event listener ke form untuk menangani submit
+        form.addEventListener('submit', function(event) {
+            // Menghentikan perilaku default form
+            event.preventDefault();
+
+            // Simulasi menyimpan pengaturan (di sini Anda akan menambahkan logika penyimpanan sesuai kebutuhan aplikasi Anda)
+
+            // Setelah pengaturan disimpan, arahkan pengguna kembali ke halaman utama (home)
+            window.location.href = "halaman_utama.html"; // Ganti 'home.html' dengan URL halaman utama Anda
+        });
+    </script>
+</body>
+</html>

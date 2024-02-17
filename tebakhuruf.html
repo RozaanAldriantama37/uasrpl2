@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz</title>
+  </head>
+  <body style="background-image: url('gambar/bg31.jpg'); background-size: cover">
+    <div class="game-container">
+      <h2 class="welcome-message">Selamat datang! Silakan klik tombol dibawah untuk memulai kuis.</h2>
+      <button class="start-button">Mulai</button>
+      <div class="question-box" style="display: none">
+        <h1 class="question"></h1>
+        <div class="options"></div>
+      </div>
+      <button class="retry-button" style="display: none">Coba Lagi</button>
+      <button class="home-button" style="display: none">Home</button> <!-- Tambah tombol Home -->
+      <div class="result"></div>
+      <p class="answer-explanation"></p>
+    </div>
+
+    <!-- Tambahkan elemen audio untuk suara tombol diklik -->
+    <audio id="button-click-sound" src="suara/interface.mp3"></audio>
+
+    <!-- Tambahkan elemen audio untuk suara menampilkan berapa soal yang terjawab benar -->
+    <audio id="correct-answer-sound" src="suara/decide.mp3"></audio>
+
+    <!-- Tambahkan elemen audio untuk suara menampilkan berapa soal yang terjawab salah -->
+    <audio id="wrong-answer-sound" src="suara/error.mp3"></audio>
+
+    <!-- Tambahkan elemen audio untuk suara menyelesaikan semua soal -->
+    <audio id="finished-sound" src="suara/goodresult.mp3"></audio>
+
+    <script src="script2.js"></script>
+  </body>
+</html>

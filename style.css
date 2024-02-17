@@ -1,0 +1,79 @@
+/* CSS untuk tombol "Home" */
+.home-button {
+  display: none; /* Agar tombol Home awalnya tersembunyi */
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: #3498db; /* Warna latar belakang tombol */
+  border: none;
+  border-radius: 5px;
+  color: #fff; /* Warna teks tombol */
+  cursor: pointer;
+  transition: background-color 0.2s; /* Efek transisi saat tombol dihover */
+}
+
+.home-button:hover {
+  background-color: #2980b9; /* Warna latar belakang tombol saat dihover */
+}
+
+/* CSS lainnya */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #fff;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.game-container {
+  width: 400px;
+  text-align: center;
+  background-color: #283747;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.options button {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.options button:hover {
+  background-color: #e67e22;
+}
+
+.start-button,
+.retry-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: #f39c12;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.start-button:hover,
+.retry-button:hover {
+  background-color: #e67e22;
+}
+
+.animal-image {
+  max-width: 100%;
+  max-height: 200px;
+}

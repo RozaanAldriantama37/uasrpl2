@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama-nama Hewan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color :#ffef0c;
+        }
+        .animal {
+            margin-top: 20px;
+            display: inline-block;
+            width: 200px;
+            margin-right: 20px;
+            vertical-align: top;
+        }
+        .animal img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+        .animal p {
+            margin-top: 10px;
+            color: #fff700; /* Warna teks oranye */
+        }
+        .back-button {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            left : 44px;
+        }
+        .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body style="background-image: url('gambar/bg31.jpg'); background-size: cover">
+    <h1>Nama-nama Hewan</h1>
+    <div class="animal">
+        <img src="gambar/singa.jpg" alt="Singa" onclick="playSound('suara/singa.mp3')">
+        <p>Singa</p>'
+    </div>
+    <div class="animal">
+        <img src="gambar/harimau.jpg" alt="Harimau" onclick="playSound('suara/harimau.mp3')">
+        <p>Harimau</p>
+    </div>
+    
+    <div class="animal">
+        <img src="gambar/gajah.jpg" alt="Gajah" onclick="playSound('suara/gajah.mp3')">
+        <p>Gajah</p>
+    </div>
+    
+    <div class="animal">
+        <img src="gambar/Jerapah.jpg" alt="Jerapah" onclick="playSound('suara/jerapah.mp3')">
+        <p>Jerapah</p>
+    </div>
+    <div class="animal">
+        <img src="gambar/zebra.jpg" alt="Zebra" onclick="playSound('suara/zebra.mp3')">
+        <p>Zebra</p>
+    </div>
+    
+    <div class="animal">
+        <img src="gambar/monyet.jpg" alt="Monyet" onclick="playSound('suara/monyet.mp3')">
+        <p>Monyet</p>
+    </div>
+    
+    <div class="animal">
+        <img src="gambar/rubah.jpg" alt="Rubah" onclick="playSound('suara/rubah.mp3')">
+        <p>Rubah</p>
+    </div>
+    <div class="animal">
+        <img src="gambar/anjing.jpg" alt="Anjing" onclick="playSound('suara/anjing.mp3')">
+        <p>Anjing</p>
+    </div>
+    <div class="animal">
+        <img src="gambar/buaya.jpg" alt="Buaya" onclick="playSound('suara/buaya.mp3')">
+        <p>Buaya</p>
+    </div>
+    <div class="animal">
+        <img src="gambar/rusa.jpg" alt="Rusa" onclick="playSound('suara/rusa.mp3')">
+        <p>Rusa</p>
+    </div>
+    <div class="animal">
+        <img src="gambar/kudanil.jpg" alt="Kudanil" onclick="playSound('suara/kudanil.mp3')">
+        <p>Kuda Nil</p>
+    </div>
+    <div class="animal">
+        <img src="gambar/kelinci.jpg" alt="Kelinci" onclick="playSound('suara/kelinci.mp3')">
+        <p>Kelinci</p>
+    </div>
+    <!-- Tambahkan daftar hewan lainnya di sini -->
+
+    <!-- Tombol kembali ke home -->
+    <section
+    <button class="back-button" onclick="goToHome()">Kembali ke Home</button>
+</section>
+    <script>
+        // Fungsi untuk mengarahkan pengguna kembali ke halaman utama
+        function goToHome() {
+            window.location.href = "index1.html"; // Ganti 'index1.html' dengan URL halaman utama Anda
+        }
+
+        // Fungsi untuk memainkan suara
+        function playSound(soundFile) {
+            var audio = new Audio(soundFile);
+            audio.play();
+        }
+    </script>
+</body>
+</html>
